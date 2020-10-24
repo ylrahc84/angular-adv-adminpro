@@ -10,18 +10,20 @@ import { AppComponent } from './app.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 @NgModule({
+
   declarations: [
     AppComponent,
     NopagefoundComponent,
-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    PagesModule, 
-    AuthModule
+    AppRoutingModule, // Jala de app--routing-module.ts las RUTAS PRINCIPALES DE LA APLICACION
+    PagesModule,  //Jalamos El Modulos de "Pages"
+    AuthModule //Jalamos El Modulos de "AUTH"
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 
 export class AppModule { }

@@ -1,27 +1,33 @@
 <div id="main-wrapper">
+    <!-- Importar COMPONENTE - HEADER desde shared -->
     <app-header></app-header>
+    <!-- Importar COMPONENTE - SIDERBAR desde shared -->
     <app-sidebar></app-sidebar>
 
     <div class="page-wrapper">
         <div class="container-fluid">
+            <!-- Importar COMPONENTE - BreadCrumbs desde shared -->
             <!--app-breadcrumbs-->
             <app-breadcrumbs></app-breadcrumbs>
-            <!-- Mi sistema de Rutas-->
 
+            <!-- Mi sistema de Rutas-->
+            <router-outlet></router-outlet>
             <!-- ============================================================== -->
             <!-- Start Page Content -->
             <!-- ============================================================== -->
-            <div class="row">
+
+            <!--div class="row">
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
 
-                            <router-outlet></router-outlet>
+
 
                         </div>
                     </div>
                 </div>
-            </div>
+            </div-->
+
             <!-- ============================================================== -->
             <!-- End PAge Content -->
             <!-- ============================================================== -->

@@ -14,6 +14,7 @@ export class BreadcrumbsComponent implements OnDestroy {
   public titulo: string;
   public tituloSubs$: Subscription;
 
+
   constructor( private router: Router ) { 
     
     this.tituloSubs$ = this.getArgumentosRuta()
@@ -24,6 +25,7 @@ export class BreadcrumbsComponent implements OnDestroy {
 
   }
 
+  
   ngOnDestroy(): void {
     this.tituloSubs$.unsubscribe();
   }
